@@ -1,4 +1,4 @@
-# Pittwater RSL FC — Formation Builder
+# Pittwater RSL FC — Formation Builder - VIBE Coded for fun
 
 Simple HTML app to arrange a soccer formation. Features:
 
