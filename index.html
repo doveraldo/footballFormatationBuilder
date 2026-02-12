@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pittwater RSL FC — Formation Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img class="club-logo" src="assets/pittwater-logo.png" alt="Pittwater RSL FC">
+    <h1>Pittwater RSL FC — Formation Builder</h1>
+    <div class="controls">
+      <button id="resetBtn">Reset</button>
+      <button id="saveBtn">Save</button>
+    </div>
+  </header>
+
+  <main class="app">
+    <section class="pitch-area">
+      <div class="pitch" id="pitch">
+        <!-- Half-field markings -->
+        <div class="half-line" aria-hidden="true"></div>
+        <div class="top-semicircle" aria-hidden="true"></div>
+        <div class="penalty-box" aria-hidden="true"></div>
+        <div class="goal-box" aria-hidden="true"></div>
+        <div class="penalty-spot" aria-hidden="true"></div>
+        <div class="penalty-arc" aria-hidden="true"></div>
+        <div class="gk-zone" id="slot-gk" aria-label="Goalkeeper zone"></div>
+        <div class="goal-post" aria-hidden="true"></div>
+
+        <!-- outfield is free-placement: drop players anywhere on the half pitch -->
+
+      </div>
+
+      <aside class="substitutes" id="subs">
+        <h2>Substitutes</h2>
+        <div id="players" class="players"></div>
+      </aside>
+    </section>
+  </main>
+
+  <template id="playerTpl">
+    <div class="player" draggable="true">
+      <div class="badge">
+        <div class="badge-inner">
+          <div class="name"></div>
+          <img class="icon" src="assets/playerIcon.png" alt="player">
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
